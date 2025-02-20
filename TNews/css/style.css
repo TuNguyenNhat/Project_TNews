@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+@media (min-width: 1200px){
+    .contair{
+        width: 1100px;
+        height: 500px;
+        border: 1px solid #014471;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo>.nav>a{
+        margin-left: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: #014471;
+        font-weight: bold;
+    }
+
+    .form_search>form{
+        border: 1px solid gray;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .form_search>form>input{
+        border: none;
+        outline: none;
+        width: 250px;
+    }
+
+    .form_search>form>button{
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #014471;
+        color: white;
+        font-weight: bold;
+    }
+
+    .form_search>form>button:hover{
+        cursor: pointer;
+    }
+
+    .login>a{
+        text-decoration: none;
+        background-color: #014471;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+
+}
+
+@media (max-width: 576px){
+
+}
