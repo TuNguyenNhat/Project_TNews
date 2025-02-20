@@ -11,11 +11,12 @@ body{
 
 @media (min-width: 1200px){
     .contair{
-        width: 1100px;
-        height: 500px;
+        width: 1200px;
+        height: auto;
         border: 1px solid #014471;
     }
 
+    /* Phan dau */
     header{
         display: flex;
         justify-content: space-between;
@@ -25,6 +26,7 @@ body{
         margin-right: 20px;
     }
 
+    /* phan logo va menu gioi thieu */
     .logo{
         display: flex;
         justify-content: center;
@@ -39,6 +41,7 @@ body{
         font-weight: bold;
     }
 
+    /* Phan nav tim kiem */
     .form_search>form{
         border: 1px solid gray;
         padding: 5px;
@@ -64,12 +67,144 @@ body{
         cursor: pointer;
     }
 
+    /* phan dang nhap dang xuat */
     .login>a{
         text-decoration: none;
         background-color: #014471;
         color: white;
         padding: 10px;
         border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /* Phan noi dung */
+    .content{
+        margin-top: 20px;
+        display: flex;
+    }
+
+    /* Noi dung ben trai "danh muc" */
+    .content_left{
+        margin-top: 50px;
+        width: 15%;
+        border: 1px solid salmon;
+    }
+
+    .content_left>h3{
+        margin-left: 20px;
+        color: #014471;
+        margin-bottom: 5px;
+    }
+
+    .content_left>ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content_left>ul>li{
+        padding: 8px 20px;
+        list-style: none;
+    }
+
+    .content_left>ul>li>a{
+        text-decoration: none;
+        color: #014471;
+        font-weight: bold;
+    }
+
+    .content_left>ul>li>ul>li{
+        list-style: none;
+        margin-left: 15px;
+    }
+
+    .content_left>ul>li>ul>li>a{
+        text-decoration: none;
+        color: #014471;
+    }
+
+    /* Noi dung chinh cua trang */
+    .content_center{
+        width: 85%;
+        border: 1px solid;
+    }
+
+    /* Phan cuoi cua trang */
+    .footer_top{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .top_1{
+        width: 50%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social_my{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .social_my-p{
+        color: #014471;
+    }
+
+    .social_my>a{
+        margin-left: 20px;
+        color: #014471;
+    }
+
+    .contact_my{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_my>div>p{
+        margin-right: 20px;
+        color: #014471;
+    }
+
+    .contact_my>.pp{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        color: #014471;
+    }
+
+    .contact_my>.pp>div{
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .contact_my>.pp>div>i{
+        margin-right: 5px;
+    }
+
+    .top_2{
+        width: 30%;
+        color: #014471;
+        margin-right: 20px;
+    }
+
+    .top_3{
+        width: 20%;
+    }
+
+    .footer_bottom{
+        background-color: #014471;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 25px;
     }
 }
 
