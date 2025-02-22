@@ -33,6 +33,7 @@
                 <a href="">Đăng nhập</a>
             </div>
         </header>
+        <hr style="color: #014471; margin-top: 10px;">
 
         <!-- Phan noi dung cua trang -->
         <div class="content">
