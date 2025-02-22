@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TNews</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_customer.css">
     <link rel="stylesheet" href="./font/icon/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
@@ -93,16 +93,112 @@
                 <div class="hot_news">
                     <!-- anh cua tin hot -->
                     <div class="image">
-
+                        <a href="">
+                            <img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;">
+                        </a>
                     </div>
                     <!-- tieu de + noi dng cua tin hot -->
                     <div class="news_content">
-
+                        <div class="tieude_tin">
+                            <a href=""><h2>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h2></a>
+                        </div>
+                        <div class="mota_tin">
+                            <a href="">
+                                <p>Đang lao xuống con dốc trên quốc lộ 6, 
+                                    xe giường nằm va chạm với xe đầu kéo tạo âm thanh như bom nổ, 
+                                    thành trái bị xé toạc, hành khách văng ra ngoài.
+                                    Trong hơn 30 hành khách trên xe giường nằm</p>
+                            </a>
+                        </div>
+                        <div class="theloai_danhmuc">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                        <div class="total_comment">
+                            <a href=""><i class="fas fa-comment"></i></a>
+                            <a href="">60</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Danh sach cac loai tin -->
+                <!-- Danh sach cac tin tuc -->
                 <div class="lits_news">
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
 
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="tieude_list-news">
+                            <a href=""><h3>Nạn nhân vụ tông xe: Tiếng va chạm như bom nổ</h3></a>
+                        </div>
+                        <div class="anh_list-news">
+                            <a href=""><img src="./image/test.webp" style="border-radius: 15px;" alt="" width= "100%;"></a>
+                        </div>
+                        <div class="tag">
+                            <a href=""><p>Thời sự</p></a>
+                            <a href=""><p>Giao thông</p></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
