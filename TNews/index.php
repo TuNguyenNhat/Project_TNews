@@ -50,7 +50,7 @@
     </nav>
 
     <!-- Phần nội dung -->
-    <div class="container d-flex flex-row mb-3 content">
+    <div class="container d-flex flex-row mb-3">
         <!-- Nội dung bên trái -->
         <div class="col-md-3">
             <div class="list-group" style="margin-bottom: 10px;">
