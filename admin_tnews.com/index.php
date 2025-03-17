@@ -37,17 +37,19 @@
             <div class="list-group" style="margin-bottom: 10px;">
                 <a href="#" class="list-group-item list-group-item-action active" 
                 style="background-color: #004370; border: none;" 
+                aria-current="true">Quản lý danh mục</a>
+                <a href="index.php?modules=taikhoan&action=them_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Thêm danh mục</a>
+                <a href="index.php?modules=taikhoan&action=ds_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách danh mục</a>
+            </div>
+
+            <div class="list-group" style="margin-bottom: 10px;">
+                <a href="#" class="list-group-item list-group-item-action active" 
+                style="background-color: #004370; border: none;" 
                 aria-current="true">Quản lý bài tin</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Thêm bài tin</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách bài tin</a>
             </div>
-            <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
-                style="background-color: #004370; border: none;" 
-                aria-current="true">Quản lý danh mục</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Thêm danh mục</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách danh mục</a>
-            </div>
+
             <div class="list-group" style="margin-bottom: 10px;">
                 <a href="#" class="list-group-item list-group-item-action active" 
                 style="background-color: #004370; border: none;" 
@@ -93,6 +95,17 @@
                             break;
                         case 'them_taikhoan':
                             include('modules/taikhoan/them_taikhoan.php');
+                            break;
+                    }
+                    break;
+                case 'danhmuc':
+                    switch($actionVa)
+                    {
+                        case 'ds_danhmuc':
+                            include('modules/danhmuc/ds_danhmuc.php');
+                            break;
+                        case 'them_danhmuc':
+                            include('modules/danhmuc/them_danhmuc.php');
                             break;
                     }
                     break;

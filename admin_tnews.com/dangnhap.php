@@ -25,7 +25,7 @@
     ?>
 
     <div class="contair">
-        <img src="./image/LogoTNews.png" alt="">
+        <img src="assets/image/LogoTNews.png" alt="">
         <h3>Đăng nhập vào trang quản lý</h3>
         <?php 
             if(isset($_SESSION['dangnhapkhongthanhkhong']))
@@ -65,14 +65,25 @@
             $arr = mysqli_fetch_assoc($res);
             if($arr)
             {
-                $_SESSION['dangnhapthanhcong'] = true;
-                $_SESSION['tennguoidung'] = $arr["tennguoidung"];
-                header("Location: index.php");
+                if($arr["tendangnhap"] === 'admin')
+                {
+                    $_SESSION['dangnhapthanhcong'] = true;
+                    $_SESSION['tennguoidung'] = $arr["tennguoidung"];
+                    header("Location: index.php");
+                    exit();
+                }
+                else
+                {
+                    $_SESSION['dangnhapkhongthanhkhong'] = "Chỉ tài khoản Admin mới được phép đăng nhập";
+                    header("Refresh: 0; url=dangnhap.php");
+                    exit();
+                }
             }
             else
             {
                 $_SESSION['dangnhapkhongthanhkhong'] = "Tài khoản hoặc mật khẩu không chính xác";
                 header("Refresh: 0; url=dangnhap.php");
+                exit();
             }
         }
     ?>
