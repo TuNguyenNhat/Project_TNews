@@ -19,24 +19,11 @@
             </div>
 
             <div class="card text-bg-danger mb-3" style="max-width: 18rem; margin: 15px;">
-                <div class="card-header">Bài tin</div>
-                <div class="card-body">
-                    <?php 
-                        $sql = "SELECT * 
-                                FROM baitin";
-                        $res = mysqli_query($conn, $sql);
-                        $dem_baitin = mysqli_num_rows($res); 
-                    ?>
-                    <h5 class="card-title">Tổng số bài tin đang có là: <span><?php echo $dem_baitin; ?></span></h5>
-                </div>
-            </div>
-
-            <div class="card text-bg-danger mb-3" style="max-width: 18rem; margin: 15px;">
                 <div class="card-header">Danh mục</div>
                 <div class="card-body">
                     <?php 
                         $sql = "SELECT * 
-                                FROM baitin";
+                                FROM danhmuc";
                         $res = mysqli_query($conn, $sql);
                         $dem_danhmuc = mysqli_num_rows($res); 
                     ?>
@@ -49,11 +36,24 @@
                 <div class="card-body">
                     <?php 
                         $sql = "SELECT * 
-                                FROM baitin";
+                                FROM theloai";
                         $res = mysqli_query($conn, $sql);
                         $dem_theloai = mysqli_num_rows($res); 
                     ?>
                     <h5 class="card-title">Tổng số thể loại đang có là: <span><?php echo $dem_theloai; ?></span></h5>
+                </div>
+            </div>
+
+            <div class="card text-bg-danger mb-3" style="max-width: 18rem; margin: 15px;">
+                <div class="card-header">Bài tin</div>
+                <div class="card-body">
+                    <?php 
+                        $sql = "SELECT * 
+                                FROM baitin";
+                        $res = mysqli_query($conn, $sql);
+                        $dem_baitin = mysqli_num_rows($res); 
+                    ?>
+                    <h5 class="card-title">Tổng số bài tin đang có là: <span><?php echo $dem_baitin; ?></span></h5>
                 </div>
             </div>
 

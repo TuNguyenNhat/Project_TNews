@@ -38,8 +38,16 @@
                 <a href="#" class="list-group-item list-group-item-action active" 
                 style="background-color: #004370; border: none;" 
                 aria-current="true">Quản lý danh mục</a>
-                <a href="index.php?modules=taikhoan&action=them_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Thêm danh mục</a>
-                <a href="index.php?modules=taikhoan&action=ds_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách danh mục</a>
+                <a href="index.php?modules=danhmuc&action=them_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Thêm danh mục</a>
+                <a href="index.php?modules=danhmuc&action=ds_danhmuc" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách danh mục</a>
+            </div>
+
+            <div class="list-group" style="margin-bottom: 10px;">
+                <a href="#" class="list-group-item list-group-item-action active" 
+                style="background-color: #004370; border: none;" 
+                aria-current="true">Quản lý thể loại</a>
+                <a href="index.php?modules=theloai&action=them_theloai" class="list-group-item list-group-item-action" style="color: #000000;">Thêm thể loại</a>
+                <a href="index.php?modules=theloai&action=ds_theloai" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách thể loại</a>
             </div>
 
             <div class="list-group" style="margin-bottom: 10px;">
@@ -53,20 +61,13 @@
             <div class="list-group" style="margin-bottom: 10px;">
                 <a href="#" class="list-group-item list-group-item-action active" 
                 style="background-color: #004370; border: none;" 
-                aria-current="true">Quản lý thể loại</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Thêm thể loại</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách thể loại</a>
-            </div>
-
-            <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
-                style="background-color: #004370; border: none;" 
                 aria-current="true">Quản lý bình luận</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách bình luận</a>
             </div>
         </div>
 
-        <?php 
+        <?php
+            //lấy đường dẫn là cha cùng họ hàng với index 
             if(isset($_GET['modules']))
             {
                 $moduleVa = $_GET['modules'];
@@ -76,6 +77,7 @@
                 $moduleVa = '';
             }
 
+            //lấy đường dẫn là con của cha tức là gọi index là chú
             if(isset($_GET['action']))
             {
                 $actionVa = $_GET['action'];
@@ -109,6 +111,17 @@
                             break;
                     }
                     break;
+                case 'theloai':
+                    switch($actionVa)
+                    {
+                        case 'ds_theloai':
+                            include('modules/theloai/ds_theloai.php');
+                            break;
+                        case 'them_theloai':
+                            include('modules/theloai/them_theloai.php');
+                            break;
+                    }
+                        break;
                 case '':
                     include('layout/content.php');
                     break;
@@ -117,7 +130,6 @@
             }
         ?>
     </div>
-
 
     <!-- nhung js boostrap -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
