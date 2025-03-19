@@ -1,3 +1,8 @@
+<style>
+    label{
+        font-weight: bold;
+    }
+</style>
 <div class="col-md" style="margin-left: 10px; 
                             height: 655px; 
                             background-color:rgb(253, 253, 253); 
@@ -6,7 +11,7 @@
     <p style="text-align: center;
             color: #004370;
             font-weight: bold;">
-            Thêm mới danh mục
+            Thêm mới thể loại
     </p>
 
     <form class="row g-3" action="index.php?modules=theloai&action=them_theloai" method="post"  style="margin-bottom: 20px; padding: 10px;">

@@ -62,7 +62,7 @@
                 <div class="card-body">
                     <?php 
                         $sql = "SELECT * 
-                                FROM baitin";
+                                FROM binhluan";
                         $res = mysqli_query($conn, $sql);
                         $dem_binhluan = mysqli_num_rows($res); 
                     ?>

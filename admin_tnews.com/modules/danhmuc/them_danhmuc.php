@@ -1,3 +1,8 @@
+<style>
+    label{
+        font-weight: bold;
+    }
+</style>
 <div class="col-md" style="margin-left: 10px; 
                             height: 655px; 
                             background-color:rgb(253, 253, 253); 

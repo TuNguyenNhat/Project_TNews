@@ -54,8 +54,8 @@
                 <a href="#" class="list-group-item list-group-item-action active" 
                 style="background-color: #004370; border: none;" 
                 aria-current="true">Quản lý bài tin</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Thêm bài tin</a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách bài tin</a>
+                <a href="index.php?modules=baitin&action=them_baitin" class="list-group-item list-group-item-action" style="color: #000000;">Thêm bài tin</a>
+                <a href="index.php?modules=baitin&action=ds_baitin" class="list-group-item list-group-item-action" style="color: #000000;">Danh sách bài tin</a>
             </div>
 
             <div class="list-group" style="margin-bottom: 10px;">
@@ -119,6 +119,17 @@
                             break;
                         case 'them_theloai':
                             include('modules/theloai/them_theloai.php');
+                            break;
+                    }
+                        break;
+                case 'baitin':
+                    switch($actionVa)
+                    {
+                        case 'ds_baitin':
+                            include('modules/baitin/ds_baitin.php');
+                            break;
+                        case 'them_baitin':
+                            include('modules/baitin/them_baitin.php');
                             break;
                     }
                         break;

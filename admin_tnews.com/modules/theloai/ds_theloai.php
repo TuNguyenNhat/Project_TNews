@@ -141,7 +141,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between">
-                <h5 class="modal-title" style="color: #004370;">Sửa danh mục</h5>
+                <h5 class="modal-title" style="color: #004370;">Sửa thể loại</h5>
                 <a href="#" data-bs-dismiss="modal" aria-label="Close">&times;</a>
             </div>
             <div class="modal-body">
@@ -181,7 +181,7 @@
                 <a href="#" data-bs-dismiss="modal" aria-label="Close">&times;</a>
             </div>
             <div class="modal-body">
-                <p>Bạn có chắc chắn muốn xóa danh mục này không?</p>
+                <p>Bạn có chắc chắn muốn xóa thể loại này không?</p>
             </div>
             <div class="modal-footer">
                 <form method="post" action="">

@@ -6,7 +6,7 @@
                     if(isset($_SESSION['dangnhapthanhcong'] ) && $_SESSION['dangnhapthanhcong']  === true)
                     { ?>
                         <h3 class="navbar-brand" style="margin-top: 5px;">
-                            Xin chào, <span style="color: #004370;"><?php echo $_SESSION['tennguoidung']; ?></span>
+                            Xin chào, <span style="color: #004370; font-weight: bold;"><?php echo $_SESSION['tennguoidung']; ?></span>
                         </h3>
                     <?php }
                     else

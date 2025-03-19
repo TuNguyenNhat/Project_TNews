@@ -1,3 +1,8 @@
+<style>
+    label{
+        font-weight: bold;
+    }
+</style>
 <div class="col-md" style="margin-left: 10px; 
                             height: 655px; 
                             background-color:rgb(253, 253, 253); 
@@ -35,7 +40,7 @@
             <input type="number" class="form-control" id="inputCity" name="them_sdt" required>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-7">
             <label for="inputCity" class="form-label">Địa chỉ</label>
             <input type="text" class="form-control" id="inputCity" name="them_diachi" required>
         </div>
@@ -48,7 +53,7 @@
             </select>
         </div> -->
 
-        <div class="col-md-1">
+        <div class="col-md-2">
             <label for="inputZip" class="form-label">Trạng thái</label>
             <input type="number" class="form-control" id="inputZip" name="them_trangthai" required>
         </div>
