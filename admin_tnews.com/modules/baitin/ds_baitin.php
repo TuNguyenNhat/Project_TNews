@@ -18,7 +18,7 @@
             <?php 
                 if(isset($_POST['sua']))
                 {
-                    $id = $_POST['id_baitin'];
+                    $id = $_POST['id_baitin_moi'];
                     $tentieude_moi = $_POST['tieude_moi'];
                     $ndtt_moi = $_POST['ndtt_moi'];
 
@@ -48,8 +48,7 @@
 
                     // debug:
                     // echo $id;
-                    // echo $tentheloai_moi;
-                    // echo $danhmuc_id_moi;
+                    // echo $theloai_moi;
                     // echo $update_sql;
                     if($update_res)
                     {
@@ -117,11 +116,10 @@
                                 baitin.ngaydang,
                                 theloai.tentheloai
                         FROM baitin
-                        LEFT JOIN theloai ON baitin.theloai_id = theloai.id
-                        ORDER BY baitin.ngaydang DESC";
+                        LEFT JOIN theloai ON baitin.theloai_id = theloai.id";
                 $res = mysqli_query($conn, $sql);
                 $stt = 0;
-                while($arr = mysqli_fetch_assoc($res))
+                while($arr = mysqli_fetch_array($res))
                 { 
                     $stt++; 
             ?>
@@ -176,7 +174,7 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="" enctype="multipart/form-data">
-                    <input type="hidden" id="idSua" name="id_baitin">
+                    <input type="" id="idSua_baitin" name="id_baitin_moi">
                     <div class="mb-3">
                         <label for="tenthie_loai" class="form-label">Tiêu đề</label>
                         <input type="text" class="form-control" id="tieude" name="tieude_moi" required>
@@ -227,7 +225,7 @@
             </div>
             <div class="modal-footer">
                 <form method="post" action="">
-                    <input type="hidden" id="idXoa" name="id_baitin_xoa">
+                    <input type="" id="idXoa" name="id_baitin_xoa">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
                     <button type="submit" class="btn btn-danger" name="xoa">Xóa</button>
                 </form>
@@ -238,11 +236,11 @@
 
 <script>
 //hàm lấy giữ liệu
-function fillModalData(id_baitin, tieude, noidungtomtat, anh, ngaydang) {
-    document.getElementById('idSua').value = id_baitin;
-    document.getElementById('tieude').value = tieude;
-    document.getElementById('ndtt_moi').value = noidungtomtat;
-    document.getElementById('anh').value = anh;
+function fillModalData(id_baitin_moi, tieude_moi, ndtt_moi, anh_moi, ngaydang) {
+    document.getElementById('idSua_baitin').value = id_baitin_moi;
+    document.getElementById('tieude').value = tieude_moi;
+    document.getElementById('ndtt_moi').value = ndtt_moi;
+    document.getElementById('anh').value = anh_moi;
     document.getElementById('ngaydang').value = ngaydang;
 }
 
