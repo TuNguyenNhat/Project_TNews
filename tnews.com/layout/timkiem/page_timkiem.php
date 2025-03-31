@@ -86,6 +86,12 @@
 
     }
 </style>
+    <?php
+        if (isset($_GET['tukhoa']) && !empty($_GET['tukhoa']))
+        {
+            $tukhoa = $_GET['tukhoa'];
+        }
+    ?>
             <div class="lits_news">
                 <?php
                     $sql = "SELECT baitin.id, 
@@ -97,8 +103,8 @@
                             FROM baitin 
                             LEFT JOIN theloai ON baitin.theloai_id = theloai.id 
                             LEFT JOIN danhmuc ON theloai.danhmuc_id = danhmuc.id 
-                            WHERE danhmuc.tendanhmuc = 'Thời sự'
-                            ORDER BY baitin.id";
+                            WHERE baitin.tieude LIKE '%$tukhoa%' OR baitin.noidungtomtat LIKE '%$tukhoa%'
+                            ORDER BY baitin.id DESC";
                     $res = mysqli_query($conn, $sql);
                     while($arr = mysqli_fetch_assoc($res))
                     { ?>

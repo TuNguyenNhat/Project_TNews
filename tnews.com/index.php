@@ -29,7 +29,7 @@
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Ngoài nước</a>
             </div>
             <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
+                <a href="index.php?layout=kinhdoanh&action=page_kinhdoanh" class="list-group-item list-group-item-action active" 
                     style="background-color: #004370; border: none;" 
                     aria-current="true">Kinh doanh</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Quốc tế</a>
@@ -38,7 +38,7 @@
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Chứng khoán</a>
             </div>
             <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
+                <a href="index.php?layout=congnghe&action=page_congnghe" class="list-group-item list-group-item-action active" 
                     style="background-color: #004370; border: none;" 
                     aria-current="true">Công nghệ</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">A.I</a>
@@ -46,7 +46,7 @@
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Ứng dụng</a>
             </div>
             <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
+                <a href="index.php?layout=thethao&action=page_thethao" class="list-group-item list-group-item-action active" 
                     style="background-color: #004370; border: none;" 
                     aria-current="true">Thể thao</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Bóng đá</a>
@@ -54,7 +54,7 @@
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Pickleball</a>
             </div>
             <div class="list-group" style="margin-bottom: 10px;">
-                <a href="#" class="list-group-item list-group-item-action active" 
+                <a href="index.php?layout=giaitri&action=page_giaitri" class="list-group-item list-group-item-action active" 
                     style="background-color: #004370; border: none;" 
                     aria-current="true">Giải trí</a>
                 <a href="#" class="list-group-item list-group-item-action" style="color: #000000;">Giới sao</a>
@@ -104,11 +104,51 @@
                             break;
                     }
                     break;
+                case 'kinhdoanh':
+                    switch($actionVa)
+                    {
+                        case 'page_kinhdoanh':
+                        include('layout/kinhdoanh/page_kinhdoanh.php');
+                            break;
+                    }
+                    break;
+                case 'congnghe':
+                    switch($actionVa)
+                    {
+                        case 'page_congnghe':
+                        include('layout/congnghe/page_congnghe.php');
+                            break;
+                    }
+                    break;
+                case 'thethao':
+                    switch($actionVa)
+                    {
+                        case 'page_thethao':
+                        include('layout/thethao/page_thethao.php');
+                            break;
+                    }
+                    break;
+                case 'giaitri':
+                    switch($actionVa)
+                    {
+                        case 'page_giaitri':
+                        include('layout/giaitri/page_giaitri.php');
+                            break;
+                    }
+                    break;
                 case 'chitiet':
                     switch($actionVa)
                     {
                         case 'chitiet_baitin':
                         include('layout/chitiet/chitiet_baitin.php');
+                            break;
+                    }
+                    break;
+                case 'timkiem':
+                    switch($actionVa)
+                    {
+                        case 'page_timkiem':
+                        include('layout/timkiem/page_timkiem.php');
                             break;
                     }
                     break;

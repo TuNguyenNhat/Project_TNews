@@ -97,7 +97,7 @@
                             FROM baitin 
                             LEFT JOIN theloai ON baitin.theloai_id = theloai.id 
                             LEFT JOIN danhmuc ON theloai.danhmuc_id = danhmuc.id 
-                            WHERE danhmuc.tendanhmuc = 'Thời sự'
+                            WHERE danhmuc.tendanhmuc = 'Công Nghệ'
                             ORDER BY baitin.id";
                     $res = mysqli_query($conn, $sql);
                     while($arr = mysqli_fetch_assoc($res))

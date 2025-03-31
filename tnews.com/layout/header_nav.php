@@ -53,6 +53,16 @@
                     </li>
                 </ul>
 
+                <!-- form tìm kiếm -->
+                <form class="d-flex" method="GET" action="index.php">
+                    <input type="hidden" name="layout" value="timkiem">
+                    <input type="hidden" name="action" value="page_timkiem">
+                    <input class="form-control me-2 btn-sm" type="search" name="tukhoa" placeholder="Nhập từ khóa..." aria-label="Search" required>
+                    <button class="btn btn-outline-success btn-sm" type="submit">
+                        Tìm
+                    </button>
+                </form>
+
                 <!-- đăng kí đăng nhập -->
                 <?php 
                     if(isset($_SESSION['dangnhapthanhcong']) && $_SESSION['dangnhapthanhcong']  === true)
@@ -68,14 +78,6 @@
                             <a href="dangnhap.php" class="btn btn-danger btn-sm">Đăng nhập</a>
                         </div>
                    <?php } ?>
-
-                <!-- form tìm kiếm -->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 btn-sm" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success btn-sm" type="submit">
-                        Tìm
-                    </button>
-                </form>
             </div>
         </div>
     </nav>
